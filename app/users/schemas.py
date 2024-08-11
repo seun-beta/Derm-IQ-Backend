@@ -10,6 +10,6 @@ class RegisterUser(BaseModel):
 
 
 class LoginUser(BaseModel):
-    email_address: EmailStr | None
+    email_address: EmailStr | None = None
     mobile_number: str
     password: str
