@@ -7,8 +7,8 @@ def hash_password(password: str) -> str:
     return hasher.hash(password)
 
 
-def verify_password(password: str, hased_password: str) -> bool:
+def verify_password(password: str, hashed_password: str) -> bool:
     try:
-        return hasher.verify(hash=hased_password, password=password)
+        return hasher.verify(hashed_password, password)
     except:
         return False
